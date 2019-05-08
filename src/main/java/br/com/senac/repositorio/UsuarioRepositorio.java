@@ -10,7 +10,7 @@ public interface UsuarioRepositorio extends JpaRepository<Usuario, Integer>{
 	 
 		Usuario findByEmail(String email);
 		
-		@Query("select a from Aluno a where a.nome = ?1")
+		@Query("select a from Usuario a where a.nome = ?1")
 		Usuario findByNome(String nome);
 		 
 	}
